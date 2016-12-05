@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BNK-FV-2gA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="BNK-FV-2gA">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4W-5s-vdO">
@@ -51,12 +51,6 @@
                                                         <constraint firstAttribute="height" constant="100" id="HaG-BM-DSZ"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WP-hB-kRh">
-                                                    <rect key="frame" x="121" y="184" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYx-GM-jB6">
                                                     <rect key="frame" x="150" y="47" width="42" height="21"/>
                                                     <constraints>
@@ -66,8 +60,15 @@
                                                     <color key="textColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WP-hB-kRh">
+                                                    <rect key="frame" x="121" y="184" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <gestureRecognizers/>
                                             <constraints>
                                                 <constraint firstItem="zYx-GM-jB6" firstAttribute="top" secondItem="1hq-qh-eWx" secondAttribute="top" constant="8" id="0H7-T5-MRc"/>
                                                 <constraint firstItem="9WP-hB-kRh" firstAttribute="top" secondItem="pYm-uI-DfI" secondAttribute="bottom" constant="8" id="EgL-FV-fG8"/>
@@ -84,6 +85,9 @@
                                                     <exclude reference="eHk-rf-Wyt"/>
                                                 </mask>
                                             </variation>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="MKb-2b-vwU" appends="YES" id="9SH-eg-9ct"/>
+                                            </connections>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="576-Du-JM4">
                                             <rect key="frame" x="309" y="8" width="283" height="252"/>
@@ -109,6 +113,7 @@
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <gestureRecognizers/>
                                             <constraints>
                                                 <constraint firstItem="oDS-am-Wbt" firstAttribute="top" secondItem="523-4k-tqc" secondAttribute="bottom" constant="8" id="7Xg-xe-Ax0"/>
                                                 <constraint firstItem="oDS-am-Wbt" firstAttribute="centerX" secondItem="576-Du-JM4" secondAttribute="centerX" id="K9B-OS-VUz"/>
@@ -125,6 +130,9 @@
                                                     <exclude reference="Trs-WP-2gh"/>
                                                 </mask>
                                             </variation>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="yl2-OH-e4X" appends="YES" id="HbD-48-HOt"/>
+                                            </connections>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLD-to-PUK">
                                             <rect key="frame" x="309" y="277" width="283" height="251"/>
@@ -153,6 +161,7 @@
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <gestureRecognizers/>
                                             <constraints>
                                                 <constraint firstItem="APP-ID-AGn" firstAttribute="top" secondItem="w7g-IY-vt4" secondAttribute="bottom" constant="8" id="AgK-eD-sve"/>
                                                 <constraint firstItem="HcA-LD-9Y5" firstAttribute="top" secondItem="APP-ID-AGn" secondAttribute="bottom" constant="8" id="EfI-sv-0Bq"/>
@@ -169,6 +178,9 @@
                                                     <exclude reference="tm4-Fo-Igd"/>
                                                 </mask>
                                             </variation>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="vz9-OB-QIH" appends="YES" id="cxg-94-0xC"/>
+                                            </connections>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1b-tv-2fM">
                                             <rect key="frame" x="8" y="277" width="284" height="251"/>
@@ -197,6 +209,7 @@
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <gestureRecognizers/>
                                             <constraints>
                                                 <constraint firstItem="WIv-U4-F4y" firstAttribute="trailing" secondItem="uOY-Mx-Uzm" secondAttribute="trailing" id="DkV-7u-sVw"/>
                                                 <constraint firstItem="uOY-Mx-Uzm" firstAttribute="centerY" secondItem="c1b-tv-2fM" secondAttribute="centerY" id="Hsw-Ye-J0q"/>
@@ -213,6 +226,9 @@
                                                     <exclude reference="wud-hI-Ie8"/>
                                                 </mask>
                                             </variation>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="6pq-wI-BeR" appends="YES" id="KpG-Ke-FyK"/>
+                                            </connections>
                                         </view>
                                     </subviews>
                                     <constraints>
@@ -271,8 +287,57 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MKb-2b-vwU">
+                    <connections>
+                        <action selector="placeTapped:" destination="BYZ-38-t0r" id="NYz-uK-y8e"/>
+                        <segue destination="609-0Q-bXZ" kind="show" id="2ex-Yj-PaN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yl2-OH-e4X">
+                    <connections>
+                        <action selector="profileTapped:" destination="BYZ-38-t0r" id="n6d-iD-hEp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6pq-wI-BeR">
+                    <connections>
+                        <action selector="friendTapped:" destination="BYZ-38-t0r" id="sdg-eW-Rd1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="vz9-OB-QIH">
+                    <connections>
+                        <action selector="messageTapped:" destination="BYZ-38-t0r" id="iTM-WX-iy0"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="952" y="136"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="gWP-tm-Xb0">
+            <objects>
+                <tableViewController id="609-0Q-bXZ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="99j-Wa-7dr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hXO-aQ-wYy">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hXO-aQ-wYy" id="3UB-Ch-gbl">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="609-0Q-bXZ" id="rhN-Wx-0AC"/>
+                            <outlet property="delegate" destination="609-0Q-bXZ" id="UdE-Xl-Dm1"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5DE-kd-9Qa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jHP-bc-0JP">
@@ -294,7 +359,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="160" height="284"/>
+        <image name="background2" width="117" height="166"/>
         <image name="place" width="85" height="85"/>
     </resources>
 </document>

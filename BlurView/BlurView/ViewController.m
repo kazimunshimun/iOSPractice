@@ -17,21 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-  //  self.glassView.backgroundColor = [UIColor clearColor];
-  //  UIToolbar* bgToolbar = [[UIToolbar alloc] initWithFrame:self.view.frame];
-  //  bgToolbar.barStyle = UIBarStyleDefault;
- //   [self.glassView.superview insertSubview:bgToolbar belowSubview:self.glassView];
-    
-    /*
-    UIVisualEffect *blurEffect;
-    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
-    
-    UIVisualEffectView *visualEffectView;
-    visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-    
-    visualEffectView.frame = _backgroundView.bounds;
-    [_backgroundView addSubview:visualEffectView];
-     */
+  
+}
+- (IBAction)placeTapped:(id)sender {
+    NSLog(@"place tapped");
+}
+- (IBAction)profileTapped:(id)sender {
+    NSLog(@"profile tapped");
+}
+- (IBAction)friendTapped:(id)sender {
+    NSLog(@"friend tapped");
+}
+- (IBAction)messageTapped:(id)sender {
+    NSLog(@"message tapped");
 }
 
 - (void)didReceiveMemoryWarning {
