@@ -13,14 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var openBankButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-      //  buttonImageTransform()
+        moveButtonImage()
     }
     
-    func buttonImageTransform() -> Void {
-        openBankButton.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
-        openBankButton.titleLabel?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
-        openBankButton.imageView?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+    func moveButtonImage() -> Void {
+        let buttonWidth = openBankButton.frame.size.width
+        openBankButton.imageEdgeInsets = UIEdgeInsetsMake(0, buttonWidth - 40, 0, 0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +27,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func openBankButtonClicked(_ sender: Any) {
+        NSLog("open bank button clicked")
     }
     
 }
