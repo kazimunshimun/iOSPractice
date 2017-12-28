@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846F01D91FF562870054E9B3 /* SubscriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F01D81FF562870054E9B3 /* SubscriptionTableViewCell.swift */; };
+		846F01DB1FF562A70054E9B3 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F01DA1FF562A70054E9B3 /* TransactionTableViewCell.swift */; };
 		CDD10BDE1FF39BA900B9826C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD10BDD1FF39BA900B9826C /* AppDelegate.swift */; };
 		CDD10BE01FF39BA900B9826C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD10BDF1FF39BA900B9826C /* ViewController.swift */; };
 		CDD10BE31FF39BA900B9826C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD10BE11FF39BA900B9826C /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		846F01D81FF562870054E9B3 /* SubscriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionTableViewCell.swift; sourceTree = "<group>"; };
+		846F01DA1FF562A70054E9B3 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		CDD10BDA1FF39BA900B9826C /* GoogleBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD10BDD1FF39BA900B9826C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDD10BDF1FF39BA900B9826C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846F01D71FF5626E0054E9B3 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				846F01D81FF562870054E9B3 /* SubscriptionTableViewCell.swift */,
+				846F01DA1FF562A70054E9B3 /* TransactionTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		CDD10BD11FF39BA900B9826C = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +90,7 @@
 		CDD10BDC1FF39BA900B9826C /* GoogleBank */ = {
 			isa = PBXGroup;
 			children = (
+				846F01D71FF5626E0054E9B3 /* TableViewCell */,
 				CDD10C021FF39D3D00B9826C /* Controller */,
 				CDD10BFD1FF39D3C00B9826C /* CoreData */,
 				CDD10C011FF39D3D00B9826C /* Extension */,
@@ -255,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846F01D91FF562870054E9B3 /* SubscriptionTableViewCell.swift in Sources */,
 				CDD10BE01FF39BA900B9826C /* ViewController.swift in Sources */,
+				846F01DB1FF562A70054E9B3 /* TransactionTableViewCell.swift in Sources */,
 				CDD10BDE1FF39BA900B9826C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
