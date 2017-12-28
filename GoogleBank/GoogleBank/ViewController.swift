@@ -27,7 +27,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func openBankButtonClicked(_ sender: Any) {
-        NSLog("open bank button clicked")
+        //NSLog("open bank button clicked")
+        print("open bank button clicked")
     }
     
 }
