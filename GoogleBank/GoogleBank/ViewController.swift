@@ -28,8 +28,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         subscriptionTableView.separatorStyle = .none
         
         gradient = CAGradientLayer()
-        gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor, UIColor.black.cgColor, UIColor.clear.cgColor, UIColor.white.cgColor]
-        gradient.locations = [0, 0, 0.5, 0.7, 1]
+        gradient.colors = [UIColor.black.cgColor, UIColor.clear.cgColor, UIColor.white.cgColor]
+        gradient.locations = [0, 0.9, 1]
         //gradient.delegate = self
         transactionTableView.layer.mask = gradient
     }
